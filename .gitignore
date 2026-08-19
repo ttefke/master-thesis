@@ -5,3 +5,4 @@ header.h
 *.bak
 target
 .Rhistory
+out
