@@ -1,3 +1,6 @@
 [submodule "nistrs"]
 	path = nistrs
 	url = git@github.com:ttefke/NISTRS.git
+[submodule "scdtools"]
+	path = scdtools
+	url = git@github.com:ttefke/scdtools.git
