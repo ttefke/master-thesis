@@ -1,0 +1,7 @@
+*/target
+-.d
+*.d
+header.h
+*.bak
+target
+.Rhistory

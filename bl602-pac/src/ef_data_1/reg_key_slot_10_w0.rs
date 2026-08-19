@@ -1,0 +1,18 @@
+#[doc = "Register `reg_key_slot_10_w0` reader"]
+pub type R = crate::R<RegKeySlot10W0Spec>;
+#[doc = "Register `reg_key_slot_10_w0` writer"]
+pub type W = crate::W<RegKeySlot10W0Spec>;
+impl W {}
+#[doc = "reg_key_slot_10_w0.\n\nYou can [`read`](crate::Reg::read) this register and get [`reg_key_slot_10_w0::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`reg_key_slot_10_w0::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct RegKeySlot10W0Spec;
+impl crate::RegisterSpec for RegKeySlot10W0Spec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`reg_key_slot_10_w0::R`](R) reader structure"]
+impl crate::Readable for RegKeySlot10W0Spec {}
+#[doc = "`write(|w| ..)` method takes [`reg_key_slot_10_w0::W`](W) writer structure"]
+impl crate::Writable for RegKeySlot10W0Spec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets reg_key_slot_10_w0 to value 0"]
+impl crate::Resettable for RegKeySlot10W0Spec {}

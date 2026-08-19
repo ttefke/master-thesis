@@ -1,0 +1,35 @@
+#[doc = "Register `spi_sto_value` reader"]
+pub type R = crate::R<SpiStoValueSpec>;
+#[doc = "Register `spi_sto_value` writer"]
+pub type W = crate::W<SpiStoValueSpec>;
+#[doc = "Field `cr_spi_sto_value` reader - "]
+pub type CrSpiStoValueR = crate::FieldReader<u16>;
+#[doc = "Field `cr_spi_sto_value` writer - "]
+pub type CrSpiStoValueW<'a, REG> = crate::FieldWriter<'a, REG, 12, u16>;
+impl R {
+    #[doc = "Bits 0:11"]
+    #[inline(always)]
+    pub fn cr_spi_sto_value(&self) -> CrSpiStoValueR {
+        CrSpiStoValueR::new((self.bits & 0x0fff) as u16)
+    }
+}
+impl W {
+    #[doc = "Bits 0:11"]
+    #[inline(always)]
+    pub fn cr_spi_sto_value(&mut self) -> CrSpiStoValueW<'_, SpiStoValueSpec> {
+        CrSpiStoValueW::new(self, 0)
+    }
+}
+#[doc = "spi_sto_value.\n\nYou can [`read`](crate::Reg::read) this register and get [`spi_sto_value::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`spi_sto_value::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct SpiStoValueSpec;
+impl crate::RegisterSpec for SpiStoValueSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`spi_sto_value::R`](R) reader structure"]
+impl crate::Readable for SpiStoValueSpec {}
+#[doc = "`write(|w| ..)` method takes [`spi_sto_value::W`](W) writer structure"]
+impl crate::Writable for SpiStoValueSpec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets spi_sto_value to value 0"]
+impl crate::Resettable for SpiStoValueSpec {}

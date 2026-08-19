@@ -1,0 +1,3 @@
+[submodule "nistrs"]
+	path = nistrs
+	url = git@github.com:Omnissi/NISTRS.git

@@ -1,0 +1,35 @@
+#[doc = "Register `rf_fsm_ctrl0` reader"]
+pub type R = crate::R<RfFsmCtrl0Spec>;
+#[doc = "Register `rf_fsm_ctrl0` writer"]
+pub type W = crate::W<RfFsmCtrl0Spec>;
+#[doc = "Field `rf_ch_ind_wifi` reader - "]
+pub type RfChIndWifiR = crate::FieldReader<u16>;
+#[doc = "Field `rf_ch_ind_wifi` writer - "]
+pub type RfChIndWifiW<'a, REG> = crate::FieldWriter<'a, REG, 12, u16>;
+impl R {
+    #[doc = "Bits 0:11"]
+    #[inline(always)]
+    pub fn rf_ch_ind_wifi(&self) -> RfChIndWifiR {
+        RfChIndWifiR::new((self.bits & 0x0fff) as u16)
+    }
+}
+impl W {
+    #[doc = "Bits 0:11"]
+    #[inline(always)]
+    pub fn rf_ch_ind_wifi(&mut self) -> RfChIndWifiW<'_, RfFsmCtrl0Spec> {
+        RfChIndWifiW::new(self, 0)
+    }
+}
+#[doc = "rf_fsm_ctrl0.\n\nYou can [`read`](crate::Reg::read) this register and get [`rf_fsm_ctrl0::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`rf_fsm_ctrl0::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct RfFsmCtrl0Spec;
+impl crate::RegisterSpec for RfFsmCtrl0Spec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`rf_fsm_ctrl0::R`](R) reader structure"]
+impl crate::Readable for RfFsmCtrl0Spec {}
+#[doc = "`write(|w| ..)` method takes [`rf_fsm_ctrl0::W`](W) writer structure"]
+impl crate::Writable for RfFsmCtrl0Spec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets rf_fsm_ctrl0 to value 0"]
+impl crate::Resettable for RfFsmCtrl0Spec {}

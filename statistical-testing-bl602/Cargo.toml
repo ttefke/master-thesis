@@ -1,0 +1,21 @@
+[package]
+name = "statistical-testing-bl602"
+version = "0.1.0"
+edition = "2024"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[[bin]]
+name = "sts"
+path = "src/bin/statistical_testing.rs"
+
+[dependencies]
+riscv = "0.15.0"
+riscv-rt = { version= "0.16.0"}
+bl602-hal = { path="../bl602-hal-suas" }
+heapless = "0.9.1"
+crc = "3.3.0"

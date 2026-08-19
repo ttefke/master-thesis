@@ -1,0 +1,35 @@
+#[doc = "Register `rf_resv_reg_2` reader"]
+pub type R = crate::R<RfResvReg2Spec>;
+#[doc = "Register `rf_resv_reg_2` writer"]
+pub type W = crate::W<RfResvReg2Spec>;
+#[doc = "Field `rf_reserved2` reader - "]
+pub type RfReserved2R = crate::FieldReader<u32>;
+#[doc = "Field `rf_reserved2` writer - "]
+pub type RfReserved2W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
+impl R {
+    #[doc = "Bits 0:31"]
+    #[inline(always)]
+    pub fn rf_reserved2(&self) -> RfReserved2R {
+        RfReserved2R::new(self.bits)
+    }
+}
+impl W {
+    #[doc = "Bits 0:31"]
+    #[inline(always)]
+    pub fn rf_reserved2(&mut self) -> RfReserved2W<'_, RfResvReg2Spec> {
+        RfReserved2W::new(self, 0)
+    }
+}
+#[doc = "rf_resv_reg_2.\n\nYou can [`read`](crate::Reg::read) this register and get [`rf_resv_reg_2::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`rf_resv_reg_2::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct RfResvReg2Spec;
+impl crate::RegisterSpec for RfResvReg2Spec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`rf_resv_reg_2::R`](R) reader structure"]
+impl crate::Readable for RfResvReg2Spec {}
+#[doc = "`write(|w| ..)` method takes [`rf_resv_reg_2::W`](W) writer structure"]
+impl crate::Writable for RfResvReg2Spec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets rf_resv_reg_2 to value 0"]
+impl crate::Resettable for RfResvReg2Spec {}

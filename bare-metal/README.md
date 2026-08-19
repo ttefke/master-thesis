@@ -1,0 +1,1 @@
+This directory contains some bare-metal applications running on the BL602 written in embedded Rust.

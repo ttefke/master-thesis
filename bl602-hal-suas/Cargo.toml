@@ -1,0 +1,10 @@
+[package]
+name = "bl602-hal"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+pac = { package="bl602-pac", path = "../bl602-pac", features=["rt"]}
+heapless = "0.9.1"
+riscv = "0.15"
+paste = "1.0.15"
