@@ -150,7 +150,7 @@ pub fn rand() -> u32 {
         }
         counter += 1;
     }
-    value >>= 1; // This is the flaw in the original RNG
+    //value >>= 1; // This is the flaw in the original RNG
     value
 }
 
