@@ -98,6 +98,7 @@ pub fn _setup_interrupts() {
     }
 
     // New interrupt handler
+    #[allow(function_casts_as_integer)]
     let new_base = _start_trap_hal as usize;
 
     unsafe {
